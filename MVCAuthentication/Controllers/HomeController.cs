@@ -8,6 +8,8 @@ namespace MVCAuthentication.Controllers
 {
     public class HomeController : Controller
     {
+        //tek action ekledim kontrol etmek için
+        [Authorize]
         public ActionResult Index()
         {
             return View();
