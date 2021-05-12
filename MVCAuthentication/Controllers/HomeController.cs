@@ -6,6 +6,7 @@ using System.Web.Mvc;
 
 namespace MVCAuthentication.Controllers
 {
+   
     public class HomeController : Controller
     {
         //tek action ekledim kontrol etmek için

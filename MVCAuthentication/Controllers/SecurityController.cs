@@ -9,6 +9,7 @@ using System.Web.Security;
 
 namespace MVCAuthentication.Controllers
 {
+    [AllowAnonymous]
     public class SecurityController : Controller
     {
         AUTContext db = new AUTContext();

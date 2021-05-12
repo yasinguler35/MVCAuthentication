@@ -12,6 +12,8 @@ namespace MVCAuthentication
     {
         protected void Application_Start()
         {
+            //butun controller için filtre uygulandı
+            GlobalFilters.Filters.Add(new AuthorizeAttribute());
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
